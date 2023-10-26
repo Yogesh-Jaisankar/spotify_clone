@@ -32,147 +32,145 @@ class _OnboardState extends State<Onboard> {
           child: Padding(
             padding: const EdgeInsets.all(30.0),
             child: SafeArea(
-              child: SingleChildScrollView(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    SizedBox(height: 30),
-                    FaIcon(
-                      FontAwesomeIcons.spotify,
-                      size: 100,
-                      color: Colors.white,
-                    ),
-                    SizedBox(height: 30),
-                    Text("Millions of songs. \n Free on Spotify.",
-                        style: GoogleFonts.montserrat(
-                            fontSize: 32,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white)),
-                    SizedBox(height: 100),
-                    GestureDetector(
-                      onTap: () {
-                        Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => SignUpFree()));
-                      },
-                      child: Padding(
-                        padding: const EdgeInsets.only(top: 10, bottom: 10),
-                        child: Container(
-                          height: 60,
-                          width: double.infinity,
-                          decoration: BoxDecoration(
-                              color: HexColor("#1DB954"),
-                              borderRadius: BorderRadius.circular(50)),
-                          child: Center(
-                              child: Text(
-                            "Sign up free",
-                            style: GoogleFonts.montserrat(
-                                color: Colors.black,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 16),
-                          )),
-                        ),
-                      ),
-                    ),
-                    GestureDetector(
-                      onTap: () {
-                        Navigator.of(context).push(
-                            MaterialPageRoute(builder: (context) => Phone()));
-                      },
-                      child: Padding(
-                        padding: const EdgeInsets.only(top: 10, bottom: 10),
-                        child: Container(
-                            height: 60,
-                            width: double.infinity,
-                            decoration: BoxDecoration(
-                                color: Colors.transparent,
-                                border: Border.all(color: Colors.grey),
-                                borderRadius: BorderRadius.circular(50)),
-                            child: ListTile(
-                              leading: FaIcon(
-                                FontAwesomeIcons.mobileScreen,
-                                color: Colors.white,
-                                size: 25,
-                              ),
-                              title: Text(
-                                "Continue with phone\n number",
-                                style: GoogleFonts.montserrat(
-                                    color: Colors.white,
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.bold),
-                                textAlign: TextAlign.center,
-                              ),
-                            )),
-                      ),
-                    ),
-                    Padding(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  SizedBox(height: 30),
+                  FaIcon(
+                    FontAwesomeIcons.spotify,
+                    size: 100,
+                    color: Colors.white,
+                  ),
+                  SizedBox(height: 30),
+                  Text("Millions of songs. \n Free on Spotify.",
+                      style: GoogleFonts.montserrat(
+                          fontSize: 32,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white)),
+                  SizedBox(height: 100),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => SignUpFree()));
+                    },
+                    child: Padding(
                       padding: const EdgeInsets.only(top: 10, bottom: 10),
                       child: Container(
-                          height: 60,
-                          width: double.infinity,
-                          decoration: BoxDecoration(
-                              color: Colors.transparent,
-                              border: Border.all(color: Colors.grey),
-                              borderRadius: BorderRadius.circular(50)),
-                          child: ListTile(
-                            leading: FaIcon(
-                              FontAwesomeIcons.google,
-                              color: Colors.white,
-                              size: 25,
-                            ),
-                            title: Text(
-                              "Continue with Google",
-                              style: GoogleFonts.montserrat(
-                                  color: Colors.white,
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.bold),
-                              textAlign: TextAlign.center,
-                            ),
-                          )),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10, bottom: 10),
-                      child: Container(
-                          height: 60,
-                          width: double.infinity,
-                          decoration: BoxDecoration(
-                              color: Colors.transparent,
-                              border: Border.all(color: Colors.grey),
-                              borderRadius: BorderRadius.circular(50)),
-                          child: ListTile(
-                            leading: FaIcon(
-                              FontAwesomeIcons.facebook,
-                              color: Colors.white,
-                              size: 25,
-                            ),
-                            title: Text(
-                              "Continue with Facebook",
-                              style: GoogleFonts.montserrat(
-                                  color: Colors.white,
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.bold),
-                              textAlign: TextAlign.center,
-                            ),
-                          )),
-                    ),
-                    GestureDetector(
-                      onTap: () {
-                        Navigator.of(context).push(
-                            MaterialPageRoute(builder: (context) => Login()));
-                      },
-                      child: Padding(
-                        padding: const EdgeInsets.all(10.0),
-                        child: Text(
-                          "Log In",
+                        height: 60,
+                        width: double.infinity,
+                        decoration: BoxDecoration(
+                            color: HexColor("#1DB954"),
+                            borderRadius: BorderRadius.circular(50)),
+                        child: Center(
+                            child: Text(
+                          "Sign up free",
                           style: GoogleFonts.montserrat(
-                              color: Colors.white,
+                              color: Colors.black,
                               fontWeight: FontWeight.bold,
                               fontSize: 16),
-                        ),
+                        )),
                       ),
-                    )
-                  ],
-                ),
+                    ),
+                  ),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) => Phone()));
+                    },
+                    child: Padding(
+                      padding: const EdgeInsets.only(top: 10, bottom: 10),
+                      child: Container(
+                          height: 60,
+                          width: double.infinity,
+                          decoration: BoxDecoration(
+                              color: Colors.transparent,
+                              border: Border.all(color: Colors.grey),
+                              borderRadius: BorderRadius.circular(50)),
+                          child: ListTile(
+                            leading: FaIcon(
+                              FontAwesomeIcons.mobileScreen,
+                              color: Colors.white,
+                              size: 25,
+                            ),
+                            title: Text(
+                              "Continue with phone\n number",
+                              style: GoogleFonts.montserrat(
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold),
+                              textAlign: TextAlign.center,
+                            ),
+                          )),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 10, bottom: 10),
+                    child: Container(
+                        height: 60,
+                        width: double.infinity,
+                        decoration: BoxDecoration(
+                            color: Colors.transparent,
+                            border: Border.all(color: Colors.grey),
+                            borderRadius: BorderRadius.circular(50)),
+                        child: ListTile(
+                          leading: FaIcon(
+                            FontAwesomeIcons.google,
+                            color: Colors.white,
+                            size: 25,
+                          ),
+                          title: Text(
+                            "Continue with Google",
+                            style: GoogleFonts.montserrat(
+                                color: Colors.white,
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold),
+                            textAlign: TextAlign.center,
+                          ),
+                        )),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 10, bottom: 10),
+                    child: Container(
+                        height: 60,
+                        width: double.infinity,
+                        decoration: BoxDecoration(
+                            color: Colors.transparent,
+                            border: Border.all(color: Colors.grey),
+                            borderRadius: BorderRadius.circular(50)),
+                        child: ListTile(
+                          leading: FaIcon(
+                            FontAwesomeIcons.facebook,
+                            color: Colors.white,
+                            size: 25,
+                          ),
+                          title: Text(
+                            "Continue with Facebook",
+                            style: GoogleFonts.montserrat(
+                                color: Colors.white,
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold),
+                            textAlign: TextAlign.center,
+                          ),
+                        )),
+                  ),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) => Login()));
+                    },
+                    child: Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: Text(
+                        "Log In",
+                        style: GoogleFonts.montserrat(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16),
+                      ),
+                    ),
+                  )
+                ],
               ),
             ),
           ),
